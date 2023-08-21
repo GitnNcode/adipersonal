@@ -12,13 +12,9 @@ function setup() {
   canvas.position(windowWidth/2-150,windowHeight/2-150)
   offsetx=windowWidth/2-150
   offsety=windowHeight/2-150
-    let rval=random(200,255)
-    let gval=random(200,255)
-    let bval=random(200,255)
   for (let i = 0; i <= 300; i += 100) {
     for (let j = 0; j <= 300; j += 100) {
-
-      fill(rval,gval,bval)
+      fill(191,213,178)
       rect(i, j, 100, 100,13);
     }
   }
@@ -90,7 +86,7 @@ function screenClear() {
   button9.remove();
   clear();
   createCanvas(300, 300);
-  background(255);
+  background(0,18,25);
 }
 
 function draw() {
@@ -108,7 +104,7 @@ function draw() {
     restart.mousePressed(reload);
     noLoop();
   }
-  if (wono == true) {
+  else if (wono == true) {
     screenClear();
     fill(0,0,255);
     textSize(50);
@@ -118,9 +114,9 @@ function draw() {
     restart.mousePressed(reload);
     noLoop();
   }
-  if (buttonspressed>=9){
+  else if (buttonspressed>=9){
     screenClear();
-    fill(0,0,255);
+    fill(0,255,0);
     textSize(50);
     textAlign(CENTER)
     text("Tie", width/2, height/2);
