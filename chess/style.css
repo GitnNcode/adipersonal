@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to right,#001219, #120b1b);
+  background-color: #001219;
   }
 canvas {
   /* display: block; */
