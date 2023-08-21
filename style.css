@@ -1,9 +1,9 @@
 /* Reset default styles for consistency */
 body {
     font-family: Roboto, Helvetica, sans-serif;
-    background-image: linear-gradient(to right,#001219, #120b1b, #001119,#100815,#001219);
+    background-image: linear-gradient(to right,#001219, #0b1b23, #07181f, #001219);
     background-size: 700%;
-    animation: bg-animation 5s infinite alternate;
+    animation: bg-animation 5s infinite alternate-reverse;
 }
 
 @keyframes bg-animation{
@@ -11,19 +11,24 @@ body {
     100% {background-position: right;}
 }
 
+.example::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     color: #e9d8a6;
-    text-align: center;
-    margin-top: 3%;
+    /* text-align: center; */
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 120vh;
+    min-height: 100vh;
     color: #e9d8a6;
-    font-size: large;
+    font-size: larger;
 }
 
 .button-container {
@@ -48,15 +53,11 @@ a:hover {
     color: #e9d8a6;
 }
 
-.hidden {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+header{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin-top: 0;
+    background-color: rgba(0,0,0,0.93);
 }
