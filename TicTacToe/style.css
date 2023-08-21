@@ -1,13 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right,#001219, #120b1b, #001119,#100815,#001219);
-    background-size: 700%;
-    animation: bg-animation 5s infinite alternate;
-  }
-  @keyframes bg-animation{
-    0% {background-position: left;}
-    100% {background-position: right;}
+    background-color: #001219;
   }
   canvas {
     display: block;
